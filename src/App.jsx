@@ -23,7 +23,7 @@ export function PrivateRoute({ children }) {
 function App() {
   return (
     <UserContextProvider>
-      <Router>
+      <Router  basename={process.env.PUBLIC_URL}>
         <NavBar />
         <Routes>
           <Route path="/" element={<ApiGitHub />} />
