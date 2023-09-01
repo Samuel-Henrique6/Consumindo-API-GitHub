@@ -1,14 +1,14 @@
-body{
-    background-color: rgb(140, 250, 195);
+body {
+  background-color: rgb(140, 250, 195);
 }
 
 .container {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 
 .card {
-    width: 90%;
-    max-width: 600px;
+  width: 90%;
+  max-width: 600px;
 }
 
 /* contato */
@@ -21,8 +21,22 @@ body{
   color: #000;
 }
 
-.contato > p{
+.contato > p {
   font-size: 2vw;
+}
+
+/*
+Graficos
+*/
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.grafico {
+  margin: 10vw auto;
 }
 
 @media (max-width: 768px) {
@@ -30,7 +44,7 @@ body{
     font-size: 6vw;
   }
 
-  .contato > p{
+  .contato > p {
     font-size: 5vw;
   }
 }

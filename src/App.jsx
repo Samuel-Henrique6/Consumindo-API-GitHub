@@ -10,6 +10,7 @@ import ApiGitHub from "./pages/ApiGitHub";
 import { UserContext, UserContextProvider } from "./contexts/UserContext";
 import Projetos from "./pages/Projetos";
 import { useContext } from "react";
+import Graficos from "./pages/Graficos";
 
 export function PrivateRoute({ children }) {
   const { logado } = useContext(UserContext);
@@ -32,6 +33,14 @@ function App() {
             element={
               <PrivateRoute>
                 <Projetos />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoute>
+                <Graficos />
               </PrivateRoute>
             }
           />

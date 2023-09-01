@@ -27,6 +27,9 @@ const NavBar = () => {
                       <Nav.Link as={Link} to={'/projetos'}>
                           Projetos
                       </Nav.Link>
+                      <Nav.Link as={Link} to={'/dashboard'}>
+                          Dashboard
+                      </Nav.Link>
                       <Nav.Link onClick={logout}>
                           Sair
                       </Nav.Link>
